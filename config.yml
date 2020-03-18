@@ -1,0 +1,16 @@
+title: webbserverprogrammering-1
+description: Distansundervisning i Webbserverprogrammering 1 med anledning av covid-19
+template:
+  repo: webbserverprogrammering-1-template
+  name: webbserverprogrammering-1
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
